@@ -76,7 +76,7 @@ public class CoverFluidVoiding extends CoverPump {
     }
 
     @Override
-    protected ParentWidget<?> createUI(ModularPanel mainPanel, PanelSyncManager syncManager) {
+    public ParentWidget<?> createUI(ModularPanel mainPanel, PanelSyncManager syncManager) {
         var isWorking = new BooleanSyncValue(this::isWorkingEnabled, this::setWorkingEnabled);
 
         return super.createUI(mainPanel, syncManager)
